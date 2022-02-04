@@ -31,7 +31,10 @@ The other containers contain the restaurant locations with their respective pict
 ![BellaCiao6](https://user-images.githubusercontent.com/94570140/152602412-f1228f90-a812-4c5d-ab8b-e1e10de56ec0.png)
 
 
-![BellaCiao7](https://user-images.githubusercontent.com/94570140/152602440-a3d347c3-289e-4270-8b6a-963ff942d5bb.png)
+### Footer
+A footer showing the contact phone number and the social media @.
+
+![BellaCiao7](https://user-images.githubusercontent.com/94570140/152603483-16756dee-5a40-49fc-9758-6d02d494c4a1.png)
 
 
 ## How it looks on a smaller device
