@@ -1,0 +1,417 @@
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Header */
+
+#container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(12), 1fr;
+  grid-template-rows: 150px auto 110px;
+  grid-template-columns: 100px auto 100px;
+
+  grid-template-areas:
+    "l l l l l h h h h r r r"
+    "c c c c c c c c c c c c"
+    "f f f f f f f f f f f f";
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.left_header {
+  margin-left: 2rem;
+
+  background-color: white;
+  grid-area: l;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.left_ul {
+  margin-left: -1;
+  padding: 0;
+}
+
+.left_a {
+  color: black;
+  text-decoration: none;
+  font-family: "Montserrat Alternates", sans-serif;
+  margin-left: 1rem;
+}
+
+.main_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  grid-area: h;
+}
+
+.bella {
+  color: #009246;
+}
+
+.ciao {
+  color: #ce2b37;
+}
+
+.header_h1 {
+  font-size: 4rem;
+  color: black;
+  font-family: "Merienda", cursive;
+}
+
+.right_header {
+  grid-area: r;
+  margin-right: 2rem;
+
+  background-color: white;
+  grid-area: r;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.right_a {
+  color: black;
+  text-decoration: none;
+  font-family: "Montserrat Alternates", sans-serif;
+  margin-right: 1rem;
+}
+
+/* First Content */
+
+.main_content {
+  grid-area: c;
+}
+
+.main_image {
+  object-fit: cover;
+  width: 100%;
+  max-height: 650px;
+  /* opacity: 0.8; */
+}
+
+/* First Footer */
+
+.main_footer {
+  display: flex;
+
+  grid-area: f;
+  justify-content: center;
+
+  height: 3rem;
+}
+
+.h2_ig {
+  font-size: 2rem;
+  margin-top: 6rem;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.ig_icon {
+  width: 34px;
+  height: 34px;
+  object-fit: cover;
+}
+
+.ig_container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.ig_footer {
+  grid-area: i;
+}
+
+.ig_text {
+  margin-left: 25%;
+  margin-right: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.ig_p {
+  font-size: 2rem;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+/* Container 2 */
+
+#container2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 1rem;
+  justify-content: center;
+}
+
+.image_box {
+  object-fit: cover;
+  width: 40rem;
+  height: 40rem;
+}
+
+.image_box:hover {
+  opacity: 0.8;
+  transition: 0.9s;
+}
+
+.image_div {
+  margin: 2rem;
+}
+
+.h3 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Merienda", cursive;
+}
+
+button {
+  font-family: inherit;
+}
+
+.btn {
+  display: inline-block;
+  color: #333333;
+  border: 2px solid #333333;
+  background-color: white;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: bold;
+  padding: 1.5rem 3.2rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.a_center {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #333333;
+  color: white;
+}
+
+#image_right {
+  flex-direction: end;
+}
+
+.hr_1 {
+  border: 1px solid black;
+  margin: 0 auto 1.5rem;
+  width: 5rem;
+}
+
+.h2_reviews {
+  text-align: center;
+  font-size: 1.6rem;
+
+  font-family: "Merienda", cursive;
+}
+
+/* Container 3 */
+
+#container3 {
+  display: flex;
+  flex-direction: row;
+  margin: 0 2rem;
+  flex-wrap: wrap;
+}
+
+.container_3 {
+  max-width: 40rem;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.icon_review {
+  width: 110px;
+}
+
+.review_span {
+  font-size: 1.6rem;
+  margin: 1rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  position: relative;
+  bottom: 5px;
+}
+
+.review_p {
+  font-size: 1.5rem;
+}
+
+.reviewer_name {
+  font-size: 1.8rem;
+  color: #009246;
+}
+
+/* Container 4 */
+
+#container4 {
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.container_4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.write_review {
+  font-size: 2rem;
+  padding: 2px;
+  margin-left: 2rem;
+  color: black;
+  border-bottom: 2px solid black;
+  font-family: "Merienda", cursive;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Container 5 */
+
+#container5 {
+  display: flex;
+  flex-direction: column;
+  margin: -1rem 2rem;
+  justify-content: center;
+}
+
+.container5_img {
+  width: 100%;
+  object-fit: cover;
+  height: 50%;
+}
+
+.hr_2 {
+  border: 1px solid black;
+  margin-top: 3rem;
+  width: 15rem;
+}
+
+.h2_reviews-2 {
+  text-align: center;
+  font-size: 3rem;
+
+  font-family: "Merienda", cursive;
+}
+
+/* Container 6 */
+
+.image_div2 {
+  margin-bottom: 5rem;
+}
+
+#container6 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 1rem;
+  justify-content: center;
+}
+
+.image_box2 {
+  object-fit: cover;
+  width: 40rem;
+  height: 40rem;
+  margin-left: 2rem;
+}
+
+.h3_2 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-family: "Merienda", cursive;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  height: 20rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.h2_reviews-footer {
+  text-align: center;
+  font-size: 1.6rem;
+  color: white;
+  font-family: "Merienda", cursive;
+}
+
+.h3_footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.h4_footer {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+}
+
+.ig_icon2 {
+  width: 25px;
+  height: 25px;
+}
+
+.ig_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
